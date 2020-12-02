@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.guard.guardFragment">
+    <!-- android:textAlignment="center" 를 주석 처리 했음 -->
+
+    <TextView
+        android:id="@+id/text_guard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/guestImage"
+            android:layout_width="match_parent"
+            android:layout_height="900px"
+            android:layout_marginTop="200px"
+            android:paddingTop="100px"
+            android:paddingBottom="100px"
+            android:src="@android:drawable/sym_def_app_icon"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOpen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="300px"
+                android:layout_weight="1"
+                android:text="문 열기" />
+
+            <Button
+                android:id="@+id/btnIgnore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="300px"
+                android:layout_weight="1"
+                android:text="무시하기" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
