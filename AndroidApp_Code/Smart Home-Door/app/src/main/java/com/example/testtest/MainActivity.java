@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     private DataOutputStream dos;
     private DataInputStream dis;
 
-    private String ip = "192.168.0.146";            // IP 번호
+    private String ip = "192.168.x.xxx";            // IP 번호
     private int port = 9999;
 
     @Override
